@@ -7,7 +7,7 @@
     <title>Project</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="styles/app.css"/>
-    <script src="scripts/jquery-3.7.1.min.js" defer></script>
+    <script src="scripts/vue.js"></script>
     <script src="scripts/app.js" defer></script>
 </head>
 <body>
@@ -25,15 +25,6 @@
                         <li class="menu__item">
                             <a href="#" class="menu__link">About</a>
                         </li>
-                        <!-- <li class="menu__item">
-                            <a href="#" class="menu__link">How it work</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Clients</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Portfolio</a>
-                        </li> -->
                     </div>
                 </nav>
                 <a href="#" class="header__link">Contact us</a>
@@ -66,24 +57,9 @@
                 <h5 class="works__text">HOW IT WORK</h5>
                 <h2 class="works__title">Three Simple Step To Started Working Process</h2>
                 <div class="works__content">
-                    <div class="works__content__item">
-                        <h4 class="item-header">Research Project</h4>
-                        <p class="item-text">
-                            There are many variations of passages of Lorem Ipsum available
-                        </p>
-                    </div>
-                    <div class="works__content__item">
-                        <h4 class="item-header">Targeting</h4>
-                        <p class="item-text">
-                            There are many variations of passages of Lorem Ipsum available
-                        </p>
-                    </div>
-                    <div class="works__content__item">
-                        <h4 class="item-header">Research Project</h4>
-                        <p class="item-text">
-                            There are many variations of passages of Lorem Ipsum available
-                        </p>
-                    </div>
+                    <works-content header="Targeting" paragraph=" There are many variations of passages of Lorem Ipsum available"></works-content> 
+                    <works-content header="Research Project" paragraph=" There are many variations of passages of Lorem Ipsum available"></works-content> 
+                    <works-content header="Targeting" paragraph=" There are many variations of passages of Lorem Ipsum available"></works-content> 
                 </div>
                 <div class="work-img">
                     <img src="images/main-img.svg" alt="work im" class="work-img__img">
@@ -96,34 +72,10 @@
                 <p class="person-comments__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
                 <div class="comment-container">
                     <div class="box-comments">
-                        <div class="comment">
-                            <div class="box-comments__body">
-                                <p class="box-comments__content">Lorem, ipsum dolor, sit amet consectetur adipisicing elit. Omnis quos illo ut perspiciatis quibusdam, fuga laboriosam delectus magni possimus, laudantium eos porro velit autem? Earum dolor voluptates amet! Eos, eius.</p>
-                            </div>
-                            <div class="box-comments__info">
-                                <img src="images/person-1.png" alt="img info" class="box-comments__img">
-                                <p class="box-comments__name">Martin Jones, Creative Cons</p>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <div class="box-comments__body">
-                                <p class="box-comments__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius assumenda similique eum nihil consequuntur quasi nobis tempora quos aspernatur? Iste quis eum, laboriosam consequuntur modi, voluptas doloribus expedita ipsum!</p>
-                            </div>
-                            <div class="box-comments__info">
-                                <img src="images/person-2.png" alt="img info" class="box-comments__img">
-                                <p class="box-comments__name">Martin Jones, Creative Cons</p>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <div class="box-comments__body">
-                                <p class="box-comments__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nihil, itaque. Dolorum hic fugit magnam atque suscipit, eos modi molestiae accusantium vero quas reiciendis! Maxime optio dolor ab, facilis eaque.</p>
-                            </div>
-                            <div class="box-comments__info">
-                                <img src="images/person-3.png" alt="img info" class="box-comments__img">
-                                <p class="box-comments__name">Martin Jones, Creative Cons</p>
-                            </div>
-                        </div>
-                    </div>
+                        <comment name="Martin Jones, Creative Cons" img="images/person-1.png" comment="Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Officia aut quas hic quisquam a quaerat iste molestiae, nesciunt, tenetur sapiente possimus beatae velit excepturi quam dolores, illum qui! Quo, in."></comment>    
+                        <comment name="Jake Pawl, Ezmir" img="images/person-2.png" comment="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit iure libero quam ducimus, nulla, est omnis aut voluptas, repellat error, praesentium. Placeat, consequuntur, voluptate. Veniam voluptatibus, excepturi."></comment>
+                        <comment name="Yashar Mohammadi, Tehran" img="images/person-3.png" comment="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit magnam quaerat quam modi nisi a inventore sint. Voluptatem aliquam enim, assumenda ullam veniam repellat sapiente laboriosam repellendus tempora earum officia?"></comment>    
+                    </div>   
                     <div class="companies">
                         <img src="images/logo-1.svg" alt="" class="companies__img">
                         <img src="images/logo-2.svg" alt="" class="companies__img">
